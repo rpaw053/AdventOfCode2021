@@ -7,7 +7,10 @@ pyenv virtualenv 3.9.7 adventofcode
 pyenv activate adventofcode
 ```
 
+Replace your input files
+
 Run the program:
 ```shell
 python day1/day1.py
+python day2/day2.py
 ```
