@@ -13,4 +13,5 @@ Run the program:
 ```shell
 python day1/day1.py
 python day2/day2.py
+python day3/day3.py
 ```
