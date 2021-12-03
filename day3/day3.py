@@ -32,30 +32,20 @@ def count_gamma_epsilon(inputs):
 
 def count_oxy_co2(inputs, element):
     iter = 0
-    len_of_input = len(inputs[0])
     while len(inputs) > 1:
-        number_of_zeros = 0
-        number_of_ones = 0
         zero_list = []
         one_list = []
         for input in inputs:
             bit = input[iter]
             if bit == "0":
-                number_of_zeros = number_of_zeros + 1
                 zero_list.append(input)
             elif bit == "1":
-                number_of_ones = number_of_ones + 1
                 one_list.append(input)
-        if number_of_zeros > number_of_ones:
+        if len(zero_list) > len(one_list):
             if element == 'oxy':
                 inputs = zero_list
             else:
                 inputs = one_list
-        elif number_of_zeros < number_of_ones:
-            if element == 'oxy':
-                inputs = one_list
-            else:
-                inputs = zero_list
         else:
             if element == 'oxy':
                 inputs = one_list
