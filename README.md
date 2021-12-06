@@ -17,4 +17,5 @@ python day2/day2.py
 python day3/day3.py
 python day4/day4.py
 python day5/day5.py
+python day6/day6.py
 ```
