@@ -27,5 +27,6 @@ inputs = [int(input) for input in inputs]
 print("Part1: How many lanternfish would there be after 80 days?",
       len(calculate_fish(inputs, 80)))
 
+# number of remaining days: 256-80=176
 print("Part2: How many lanternfish would there be after 256 days?",
       len(calculate_fish(inputs, 176)))
